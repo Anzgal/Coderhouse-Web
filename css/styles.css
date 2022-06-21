@@ -18,6 +18,7 @@ header{
     top: 0;
     background: aqua;
     align-items: center;
+    z-index: 100;
 }
 header nav{
     padding-left: 20px;
@@ -69,17 +70,26 @@ footer .rightsText{
 .section{
     margin-bottom: 50px;
 }
+.section__container{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 982px;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+}
 
 /*  HOME  */
 
 /* HERO */
-#hero{
+#hero .section__container{
     display: flex;
     padding: 20px;
     align-items: center;
     justify-content: center;
 }
-#hero div.heroText{
+    
+#hero .section__container div.heroText{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -89,14 +99,14 @@ footer .rightsText{
     padding-bottom: 25px;
     width: 50%;
 }
-#hero .heroText h1{
+#hero .section__container .heroText h1{
     font-weight: 700;
     font-size: 2.5rem;
 }
-#hero .heroText p{
+#hero .section__container .heroText p{
     margin-top: 25px;
 }
-#hero .heroCta{
+#hero .section__container .heroCta{
     text-decoration: none;
     background-color: black;
     color: white;
@@ -104,22 +114,32 @@ footer .rightsText{
     padding: 10px;
     margin-top: 25px;
 }
-#hero div.heroImage{
+#hero .section__container div.heroImage{
     display: flex;
     align-items: center;
     padding-left: 50px;
     padding-right: 50px;
     width: 50%;
 }
-#hero div.heroImage img{
+#hero .section__container div.heroImage img{
     width: 100%;
+}
+@media screen and (max-width: 750px){
+    #hero .section__container{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    #hero .section__container div.heroText, #hero .section__container div.heroImage{
+        width: 100%;
+    }
 }
 
 /* SOCIAL PROOF */
-#socialProof{
+#socialProof .section__container{
     text-align: center;
 }
-#socialProof ul{
+#socialProof .section__container ul{
     display: flex;
     list-style-type: none;
     justify-content: space-evenly;
@@ -130,48 +150,58 @@ footer .rightsText{
 
 /* MEDIA SECTIONS */
 
-.mediaSection{
+.mediaSection .section__container{
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 20px;
 }
-.mediaImage{
+.mediaSection .section__container .mediaImage{
     width: 50%;
     display: flex;
     align-items: center;
     padding-left: 50px;
     padding-right: 50px;
 }
-.mediaImage img{
+.mediaSection .section__container .mediaImage img{
     width: 100%;
     height: auto;
 }
-.mediaText{
+.mediaSection .section__container .mediaText{
     padding: 20px;
     width: 50%;
 }
+@media screen and (max-width: 750px){
+    .mediaSection .section__container{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .mediaSection .section__container .mediaImage, .mediaSection .section__container .mediaText{
+        width: 100%;
+    }
+}
 
 /* CTA SECTION */
-#cta{
+#cta .section__container{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     padding: 20px;
     flex-wrap: wrap;
 }
-#cta .ctaText{
+#cta .section__container .ctaText{
     display: flex;
     flex-direction: column;
     padding: 20px;
 }
-#cta .ctaButtons{
+#cta .section__container .ctaButtons{
     display: flex;
     justify-content: space-evenly;
     gap: 20px;
     padding: 20px;
 }
-#cta .ctaButtons a{
+#cta .section__container .ctaButtons a{
     text-decoration: none;
     background-color: black;
     color: white;
@@ -199,18 +229,39 @@ footer .rightsText{
     font-weight: 700;
     font-size: 2.5rem;
 }
-#facts--about{
+@media screen and (max-width: 750px){
+    #hero--about{
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+    #hero--about .heroTextContainer{
+        width: 100%;
+        margin-left: 0;
+    }
+}
+#facts--about .section__container{
     display: flex;
     flex-direction: row;
     justify-content: center;
     padding: 20px;
 }
-#facts--about .fact{
+#facts--about .section__container .fact{
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 20px;
     width: 50%;
+}
+@media screen and (max-width: 550px){
+    #facts--about .section__container{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    #facts--about .section__container .fact{
+        width: 100%;
+    }
 }
 #video--about{
     display: flex;
@@ -285,6 +336,11 @@ footer .rightsText{
     padding: 20px;
     width: 50%;
 }
+@media screen and (max-width: 750px){
+    #form--contact form{
+        width: 100%;
+    }    
+}
 #social--contact{
     display: flex;
     flex-direction: column;
@@ -300,7 +356,7 @@ footer .rightsText{
     align-items: center;
     justify-content: center;
 }
-#grid--products .productsContainer{
+#grid--products .section__container .productsContainer{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -308,7 +364,7 @@ footer .rightsText{
     padding: 20px;
     gap: 20px;
 }
-#grid--products .productCard{
+#grid--products .section__container .productCard{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -318,7 +374,7 @@ footer .rightsText{
     border-color: black;
     border-style: solid;
 }
-#grid--products .productCard a {
+#grid--products .section__container .productCard a {
     text-decoration: none;
     background-color: black;
     color: white;
@@ -387,7 +443,7 @@ footer .rightsText{
 /* GRID AREAS */
 .homeContainer{
     display: grid;
-    grid-template-columns: 25vw 25vw 25vw 25vw;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: auto;
     grid-template-areas: 
     "header header header header"
@@ -407,7 +463,7 @@ footer .rightsText{
 
 .aboutContainer{
     display: grid;
-    grid-template-columns: 25vw 25vw 25vw 25vw;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: auto;
     grid-template-areas: 
     "header header header header"
@@ -426,7 +482,7 @@ footer .rightsText{
 
 .contactContainer{
     display: grid;
-    grid-template-columns: 25vw 25vw 25vw 25vw;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: auto;
     grid-template-areas: 
     "header header header header"
@@ -445,7 +501,7 @@ footer .rightsText{
 
 .productlistContainer{
     display: grid;
-    grid-template-columns: 25vw 25vw 25vw 25vw;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: auto;
     grid-template-areas: 
     "header header header header"
@@ -465,7 +521,7 @@ footer .rightsText{
 
 .detailsContainer{
     display: grid;
-    grid-template-columns: 25vw 25vw 25vw 25vw;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: auto;
     grid-template-areas: 
     "header header header header"
@@ -483,7 +539,7 @@ footer .rightsText{
 }
 #product--details{
     display: grid;
-    grid-template-columns: 50vw 50vw;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
     grid-template-areas: 
     "gallery description";
@@ -494,3 +550,14 @@ footer .rightsText{
 #product--details .productDescription{
     grid-area: description;
 }
+@media screen and (max-width: 750px){
+    #product--details{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "gallery"
+        "description";
+    }
+}
+
