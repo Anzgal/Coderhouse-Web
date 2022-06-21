@@ -338,9 +338,9 @@ footer .rightsText{
 
 /*PRODUCT DETAILS*/
 #product--details{
-    display: flex;
+    /* display: flex; */
     padding: 20px;
-    justify-content: center;
+    /* justify-content: center; */
 }
 #product--details .productGallery{
     display: flex;
@@ -349,7 +349,7 @@ footer .rightsText{
     justify-content: center;
     padding: 20px;
     gap: 10px;
-    width: 50%;
+    /* width: 50%; */
 }
 #product--details .productGallery .mainImg{
     width: 100%;
@@ -362,7 +362,7 @@ footer .rightsText{
     flex-direction: column;
     height: 100%;
     padding: 20px;
-    width: 50%;
+    /* width: 50%; */
 }
 #product--details .productDescription h1{
     font-weight: 700;
@@ -382,4 +382,115 @@ footer .rightsText{
     justify-content: center;
     padding: 20px;
     text-align: center;
+}
+
+/* GRID AREAS */
+.homeContainer{
+    display: grid;
+    grid-template-columns: 25vw 25vw 25vw 25vw;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "header header header header"
+    "main main main main"
+    "footer footer footer footer";
+}
+.homeContainer header{
+    grid-area: header;
+}
+.homeContainer main{
+    grid-area: main;
+}
+.homeContainer footer{
+    grid-area: footer;
+}
+
+
+.aboutContainer{
+    display: grid;
+    grid-template-columns: 25vw 25vw 25vw 25vw;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "header header header header"
+    "main main main main"
+    "footer footer footer footer";
+}
+.aboutContainer header{
+    grid-area: header;
+}
+.aboutContainer main{
+    grid-area: main;
+}
+.aboutContainer footer{
+    grid-area: footer;
+}
+
+.contactContainer{
+    display: grid;
+    grid-template-columns: 25vw 25vw 25vw 25vw;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "header header header header"
+    "main main main main"
+    "footer footer footer footer";
+}
+.contactContainer header{
+    grid-area: header;
+}
+.contactContainer main{
+    grid-area: main;
+}
+.contactContainer footer{
+    grid-area: footer;
+}
+
+.productlistContainer{
+    display: grid;
+    grid-template-columns: 25vw 25vw 25vw 25vw;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "header header header header"
+    "main main main main"
+    "footer footer footer footer";
+}
+.productlistContainer header{
+    grid-area: header;
+}
+.productlistContainer main{
+    grid-area: main;
+}
+.productlistContainer footer{
+    grid-area: footer;
+}
+
+
+.detailsContainer{
+    display: grid;
+    grid-template-columns: 25vw 25vw 25vw 25vw;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "header header header header"
+    "main main main main"
+    "footer footer footer footer";
+}
+.detailsContainer header{
+    grid-area: header;
+}
+.detailsContainer main{
+    grid-area: main;
+}
+.detailsContainer footer{
+    grid-area: footer;
+}
+#product--details{
+    display: grid;
+    grid-template-columns: 50vw 50vw;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "gallery description";
+}
+#product--details .productGallery{
+    grid-area: gallery;
+}
+#product--details .productDescription{
+    grid-area: description;
 }
