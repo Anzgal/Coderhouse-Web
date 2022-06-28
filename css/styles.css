@@ -113,6 +113,7 @@ footer .rightsText{
     width: fit-content;
     padding: 10px;
     margin-top: 25px;
+    background: linear-gradient(90deg, rgba(93,93,93,1) 0%, rgba(100,135,132,1) 70%);
 }
 #hero .section__container div.heroImage{
     display: flex;
@@ -123,6 +124,10 @@ footer .rightsText{
 }
 #hero .section__container div.heroImage img{
     width: 100%;
+    transition: 100ms linear;
+}
+#hero .section__container div.heroImage img:hover{
+    transform: scale(1.02);
 }
 @media screen and (max-width: 750px){
     #hero .section__container{
@@ -166,6 +171,10 @@ footer .rightsText{
 .mediaSection .section__container .mediaImage img{
     width: 100%;
     height: auto;
+    transition: 100ms linear;
+}
+.mediaSection .section__container .mediaImage img:hover {
+    transform: scale(1.02);
 }
 .mediaSection .section__container .mediaText{
     padding: 20px;
@@ -560,4 +569,16 @@ footer .rightsText{
         "description";
     }
 }
+
+/* WHATSAPP BUTTON */
+.wa-button-fixed{
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    animation: bounce .7s infinite alternate;
+}
+@keyframes bounce {
+    to { transform: scale(1.1); }
+  }
+  
 
