@@ -10,7 +10,7 @@ body{
 }
 
 /*  HEADER  */
-header{
+/* header{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -32,7 +32,7 @@ header nav ul{
 }
 header img{
     width: 80px;
-}
+} */
 
 /* FOOTER */
 footer{
@@ -73,10 +73,13 @@ footer .rightsText{
 .section__container{
     margin-left: auto;
     margin-right: auto;
-    max-width: 982px;
     padding-left: 15px;
     padding-right: 15px;
     position: relative;
+}
+.img-shadow {
+    -webkit-box-shadow: 0px 0px 30px rgba(115, 128, 157, 0.3);
+    box-shadow: 0px 0px 30px rgba(115, 128, 157, 0.3);
 }
 
 /*  HOME  */
@@ -145,12 +148,9 @@ footer .rightsText{
     text-align: center;
 }
 #socialProof .section__container ul{
-    display: flex;
     list-style-type: none;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    gap: 35px;
     margin-top: 30px;
+    padding-left: 0;
 }
 
 /* MEDIA SECTIONS */
@@ -231,7 +231,7 @@ footer .rightsText{
 #hero--about .heroTextContainer{
     margin-top: 40px;
     margin-bottom: 40px;
-    width: 50%;
+    /* width: 50%; */
     margin-left: 40px;
 }
 #hero--about .heroTextContainer h1{
@@ -245,7 +245,7 @@ footer .rightsText{
         justify-content: center;
     }
     #hero--about .heroTextContainer{
-        width: 100%;
+        /* width: 100%; */
         margin-left: 0;
     }
 }
@@ -260,7 +260,7 @@ footer .rightsText{
     flex-direction: column;
     justify-content: center;
     padding: 20px;
-    width: 50%;
+    /* width: 50%; */
 }
 @media screen and (max-width: 550px){
     #facts--about .section__container{
@@ -269,7 +269,7 @@ footer .rightsText{
         justify-content: center;
     }
     #facts--about .section__container .fact{
-        width: 100%;
+        /* width: 100%; */
     }
 }
 #video--about{
@@ -282,12 +282,12 @@ footer .rightsText{
     flex-direction: column;
     justify-content: center;
     overflow:hidden;
-    padding-bottom:400px; /* Adecua este valor para controlar la altura del video */
+    padding-bottom:51%;
     position:relative;
     height:0;
-    width: 100%;
-    margin-left: 40px;
-    margin-right: 40px;
+    /* width: 100%; */
+    /* margin-left: 40px;
+    margin-right: 40px; */
 }
 #video--about .videoContainer iframe, #video--about .videoContainer object, #video--about .videoContainer embed {
 	left:0;
