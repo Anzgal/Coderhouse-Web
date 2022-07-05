@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" >
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- CSS only -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
@@ -11,21 +11,21 @@
       integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
       crossorigin="anonymous"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" >
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin >
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap"
       rel="stylesheet"
-    >
+    />
     <link rel="stylesheet" href="../css/styles.css" />
     <link
       rel="icon"
       type="image/png"
       href="../assets/img/Adoptamex-favicon.png"
     />
-    <title>AdoptaMex - Contacto</title>
+    <title>AdoptaMex - Listado</title>
   </head>
-  <body class="contactContainer">
+  <body class="productlistContainer">
     <!--HEADER-->
     <header class="shadow-sm">
       <nav class="navbar navbar-expand-lg bg-white">
@@ -61,10 +61,10 @@
                 <a class="nav-link" href="./about.html">Nosotros</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Contacto</a>
+                <a class="nav-link" href="./contact.html">Contacto</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./list.html">Listado</a>
+                <a class="nav-link active" aria-current="page" href="#">Listado</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="./detail.html">Detalle</a>
@@ -77,104 +77,88 @@
     <!--MAIN-->
     <main>
       <!--HERO-->
-      <section id="hero--contact" class="section bg-lightblue">
-        <h1>Contáctanos</h1>
+      <section id="hero--products" class="section">
+        <h1>Listado</h1>
       </section>
-
-      <!--CONTACT FORM-->
-      <section class="section" id="form--contact">
-        <form action="contact.php" method="post">
-          <label for="name">Nombre</label>
-          <input type="text" name="name" id="name" placeholder="Nombre" />
-          <label for="email">Email</label>
-          <input
-            type="email"
-            name="email"
-            id="email"
-            placeholder="Correo electrónico"
-          />
-          <label for="phone">Teléfono</label>
-          <input
-            type="tel"
-            name="phone"
-            id="phone"
-            placeholder="Número de teléfono"
-          />
-          <label for="message">Mensaje</label>
-          <textarea
-            name="message"
-            id="message"
-            cols="30"
-            rows="10"
-            placeholder="Mensaje"
-          ></textarea>
-          <input type="submit" value="Enviar" />
-        </form>
-      </section>
-      <!--SOCIAL-->
-      <section class="section" id="social--about">
-        <h2>Siguenos en nuestras redes</h2>
-        <div class="container-lg socialContainer">
-          <div class="d-flex justify-content-center flex-wrap gap-3">
-            <a href="#">
-              <img
-                src="../assets/img/facebook.png"
-                alt="Facebook icon"
-                width="50"
-              />
-            </a>
-
-            <a href="#">
-              <img
-                src="../assets/img/instagram.png"
-                alt="Instagram icon"
-                width="50"
-              />
-            </a>
-
-            <a href="#">
-              <img
-                src="../assets/img/youtube.png"
-                alt="Youtube icon"
-                width="50"
-              />
-            </a>
-
-            <a href="#">
-              <img
-                src="../assets/img/gorjeo.png"
-                alt="Twitter icon"
-                width="50"
-              />
-            </a>
-
-            <a href="#">
-              <img
-                src="../assets/img/tik-tok.png"
-                alt="Tiktok icon"
-                width="50"
-              />
-            </a>
+      <!--PRODUCTS-->
+      <section class="section" id="grid--products">
+        <div class="section__container">
+          <div class="productsContainer">
+            <div class="productCard">
+              <img src="../assets/img/dog-gallery-2.jpg" alt="Product" />
+              <h3>Pancho</h3>
+              <p>
+                Esta es una breve descripción de la mascota
+              </p>
+              <a href="#">Ver más</a>
+            </div>
+            <div class="productCard">
+              <img src="../assets/img/dog-gallery-2.jpg" alt="Product" />
+              <h3>Pancho</h3>
+              <p>
+                Esta es una breve descripción de la mascota
+              </p>
+              <a href="#">Ver más</a>
+            </div>
+            <div class="productCard">
+              <img src="../assets/img/dog-gallery-2.jpg" alt="Product" />
+              <h3>Pancho</h3>
+              <p>
+                Esta es una breve descripción de la mascota
+              </p>
+              <a href="#">Ver más</a>
+            </div>
+            <div class="productCard">
+              <img src="../assets/img/dog-gallery-2.jpg" alt="Product" />
+              <h3>Pancho</h3>
+              <p>
+                Esta es una breve descripción de la mascota
+              </p>
+              <a href="#">Ver más</a>
+            </div>
+            <div class="productCard">
+              <img src="../assets/img/dog-gallery-2.jpg" alt="Product" />
+              <h3>Pancho</h3>
+              <p>
+                Esta es una breve descripción de la mascota
+              </p>
+              <a href="#">Ver más</a>
+            </div>
+            <div class="productCard">
+              <img src="../assets/img/dog-gallery-2.jpg" alt="Product" />
+              <h3>Pancho</h3>
+              <p>
+                Esta es una breve descripción de la mascota
+              </p>
+              <a href="#">Ver más</a>
+            </div>
+            <div class="productCard">
+              <img src="../assets/img/dog-gallery-2.jpg" alt="Product" />
+              <h3>Pancho</h3>
+              <p>
+                Esta es una breve descripción de la mascota
+              </p>
+              <a href="#">Ver más</a>
+            </div>
+            <div class="productCard">
+              <img src="../assets/img/dog-gallery-2.jpg" alt="Product" />
+              <h3>Pancho</h3>
+              <p>
+                Esta es una breve descripción de la mascota
+              </p>
+              <a href="#">Ver más</a>
+            </div>
+            <div class="productCard">
+              <img src="../assets/img/dog-gallery-2.jpg" alt="Product" />
+              <h3>Pancho</h3>
+              <p>
+                Esta es una breve descripción de la mascota
+              </p>
+              <a href="#">Ver más</a>
+            </div>
           </div>
         </div>
       </section>
-      <!--MAP-->
-      <section class="section" id="map--contact">
-        <div class="map">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.898410089898!2d-58.46970108566984!3d-34.62409898465909!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccb8f8f8f8f%3A0x9f8f8f8f8f8f8f!2sAv.%20San%20Martín%20de%20Los%20Andes%20%28San%20Martín%20de%20Los%20Andes%29%2C%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1588984100898!5m2!1ses!2sar"
-            width="100%"
-            height="100%"
-            frameborder="0"
-            style="border: 0"
-            allowfullscreen=""
-            aria-hidden="false"
-            tabindex="0"
-          ></iframe>
-        </div>
-      </section>
-
-      
     </main>
 
     <!--FOOTER-->
@@ -184,8 +168,8 @@
         <ul class="d-flex justify-content-evenly flex-wrap gap-5">
           <li><a href="../index.html">Inicio</a></li>
           <li><a href="./about.html">Nosotros</a></li>
-          <li><a href="#">Contacto</a></li>
-          <li><a href="./list.html">Listado</a></li>
+          <li><a href="./contact.html">Contacto</a></li>
+          <li><a href="#">Listado</a></li>
           <li><a href="./detail.html">Detalle</a></li>
         </ul>
       </nav>
