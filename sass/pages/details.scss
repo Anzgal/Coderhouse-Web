@@ -1,0 +1,45 @@
+// File: pages/details.scss
+
+// This file contains all styles related to the details page.
+
+/* DETAILS STYLES START HERE */
+#product--details{
+    padding: 20px;
+    .productGallery{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 20px;
+        gap: 10px;
+        .mainImg{
+            width: 100%;
+        }
+        .miniatureImg{
+            width: 22%;
+        }
+    }
+    .productDescription{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        padding: 20px;
+        h1{
+            font-weight: 700;
+            font-size: 2.5rem;
+        }
+        a{
+            text-decoration: none;
+            background-color: black;
+            color: white;
+            width: fit-content;
+            padding: 10px;
+            margin-top: 25px;
+        }
+    }
+}
+#social--details{
+    padding: 20px;
+    text-align: center;
+}
+/* DETAILS STYLES END HERE */

@@ -1,0 +1,14 @@
+// File: main.scss
+@import 'partials/colors.scss';
+@import 'utils/reset';
+@import 'partials/typography';
+@import 'components/header';
+@import 'components/footer';
+@import 'utils/misc';
+@import 'pages/home';
+@import 'pages/about';
+@import 'pages/contact';
+@import 'pages/list';
+@import 'pages/details';
+@import 'utils/layout';
+@import 'utils/wabutton';

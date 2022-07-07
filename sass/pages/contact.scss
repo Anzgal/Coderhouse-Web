@@ -1,0 +1,32 @@
+// File: pages/contact.scss
+
+// This file contains all styles related to the list page.
+
+/* CONTACT STYLES START HERE */
+#hero--contact{
+    display: flex;
+    padding: 80px 20px;
+    align-items: center;
+    justify-content: center;
+}
+#form--contact{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 20px;
+    form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 20px;
+        width: 50%;
+        @media screen and (max-width: 750px){
+            width: 100%;
+        }
+    }
+}
+#social--contact{
+    padding: 20px;
+    text-align: center;
+}
+/* CONTACT STYLES END HERE */

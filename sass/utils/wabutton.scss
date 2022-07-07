@@ -1,0 +1,17 @@
+// File: utils/wabutton.scss
+
+// This file contains all styles related to the Whatsapp fixed button.
+
+/* WABUTTON STYLES START HERE */
+.wa-button-fixed{
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    animation: bounce .7s infinite alternate;
+}
+@keyframes bounce {
+    to {
+        transform: scale(1.1); 
+    }
+}
+/* WABUTTON STYLES END HERE */

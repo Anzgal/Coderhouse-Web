@@ -1,0 +1,79 @@
+// File: pages/home.scss
+
+// This file contains all styles related to the home page.
+
+/* HOME STYLES START HERE */
+#hero{
+    padding-top: 25px;
+    .section__container{
+        padding: 20px;
+        .heroCta{
+            display: block;
+            text-decoration: none;
+            color: white;
+            width: fit-content;
+            padding: 10px;
+            margin-top: 20px;
+            background: linear-gradient(25deg, rgb(21 55 209 / 58%) 0%, rgb(39 82 205) 70%);
+            border-radius: 4px;
+            &:hover{
+                background: linear-gradient(25deg, rgba(38, 69, 204, 0.58) 0%, rgb(56, 95, 204) 70%);
+            }
+        }
+        img.heroImg{
+            transition: 400ms linear;
+            &:hover{
+                transform: scale(1.02);
+            }
+        }
+    }
+}
+
+#socialProof{
+    padding-bottom: 71px;
+    .section__container{
+        text-align: center;
+        ul{
+            list-style-type: none;
+            margin-top: 30px;
+            padding-left: 0;
+        }
+    }
+}
+
+.mediaSection .section__container{
+    padding: 20px;
+}
+
+#cta{
+    padding-top: 25px;
+    .section__container{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: 20px;
+        flex-wrap: wrap;
+        .ctaText{
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+        }
+        .ctaButtons{
+            display: flex;
+            justify-content: space-evenly;
+            gap: 20px;
+            padding: 20px;
+            a{
+                text-decoration: none;
+                background-color: black;
+                color: white;
+                padding: 10px;
+                width: fit-content;
+                width: 120px;
+                text-align: center;
+                border-radius: 5px;
+            }
+        }
+    }
+}
+/* HOME STYLES END HERE */
