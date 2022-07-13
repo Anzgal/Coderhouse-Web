@@ -3,30 +3,41 @@
 // This file contains all styles related to the list page.
 
 /* CONTACT STYLES START HERE */
+@use '../utils/mixins';
+
 #hero--contact{
-    display: flex;
+    @include mixins.centerContentHorizontallyandVertically;
     padding: 80px 20px;
-    align-items: center;
-    justify-content: center;
 }
 #form--contact{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding: 20px;
+
     form{
         display: flex;
         flex-direction: column;
         justify-content: center;
         padding: 20px;
-        width: 50%;
-        @media screen and (max-width: 750px){
-            width: 100%;
+        max-width: 650px;
+        margin: 0 auto;
+        .form-group{
+            margin-bottom: 1rem;
+        }
+        label{
+            margin-bottom: 0.5rem;
+        }
+        .btn.btn-primary{
+            background-color: #0f4faf;
+            &:hover{
+                background-color: #030e1f;
+            }
         }
     }
 }
+#map--contact{
+    .map{
+        min-height: 450px;
+    }
+}
 #social--contact{
-    padding: 20px;
     text-align: center;
 }
 /* CONTACT STYLES END HERE */

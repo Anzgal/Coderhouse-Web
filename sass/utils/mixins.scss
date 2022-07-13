@@ -1,0 +1,5 @@
+@mixin centerContentHorizontallyandVertically{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

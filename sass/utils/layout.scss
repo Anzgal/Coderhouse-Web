@@ -22,96 +22,15 @@
     }
 }
 .aboutContainer{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: auto;
-    grid-template-areas: 
-    "header header header header"
-    "main main main main"
-    "footer footer footer footer";
-    header{
-        grid-area: header;
-    }
-    main{
-        grid-area: main;
-    }
-    footer{
-        grid-area: footer;
-    }
+    @extend .homeContainer;
 }
 .contactContainer{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: auto;
-    grid-template-areas: 
-    "header header header header"
-    "main main main main"
-    "footer footer footer footer";
-    header{
-        grid-area: header;
-    }
-    main{
-        grid-area: main;
-    }
-    footer{
-        grid-area: footer;
-    }
+    @extend .homeContainer;
 }
 .productlistContainer{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: auto;
-    grid-template-areas: 
-    "header header header header"
-    "main main main main"
-    "footer footer footer footer";
-    header{
-        grid-area: header;
-    }
-    main{
-        grid-area: main;
-    }
-    footer{
-        grid-area: footer;
-    }
+    @extend .homeContainer;
 }
 .detailsContainer{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: auto;
-    grid-template-areas: 
-    "header header header header"
-    "main main main main"
-    "footer footer footer footer";
-    header{
-        grid-area: header;
-    }
-    main{
-        grid-area: main;
-    }
-    footer{
-        grid-area: footer;
-    }
-}
-#product--details{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
-    grid-template-areas: 
-    "gallery description";
-    .productGallery{
-        grid-area: gallery;
-    }
-    .productDescription{
-        grid-area: description;
-    }
-    @media screen and (max-width: 750px){
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
-        grid-template-areas: 
-        "gallery"
-        "description";
-    }
+    @extend .homeContainer;
 }
 /* LAYOUT STYLES END HERE */

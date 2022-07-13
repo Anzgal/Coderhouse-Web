@@ -23,6 +23,10 @@
       type="image/png"
       href="../assets/img/Adoptamex-favicon.png"
     />
+    <meta
+      name="description"
+      content="Conoce a tu próxima mascota y aplica para adoptarla."
+    />
     <title>AdoptaMex - Detalle</title>
   </head>
   <body class="detailsContainer">
@@ -62,11 +66,12 @@
                 <a class="nav-link" href="./contact.html">Contacto</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./list.html">Listado</a
-                >
+                <a class="nav-link" href="./list.html">Listado</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Detalle</a>
+                <a class="nav-link active" aria-current="page" href="#"
+                  >Detalle</a
+                >
               </li>
             </ul>
           </div>
@@ -76,38 +81,110 @@
     <!--MAIN-->
     <main>
       <section class="section" id="product--details">
-        <div class="productGallery">
-          <img src="../assets/img/dog-gallery-2.jpg" alt="" class="mainImg" />
-          <img
-            src="../assets/img/dog-gallery-2.jpg"
-            alt=""
-            class="miniatureImg activeImg"
-          />
-          <img
-            src="../assets/img/dog-gallery-2.jpg"
-            alt=""
-            class="miniatureImg inactiveImg"
-          />
-          <img
-            src="../assets/img/dog-gallery-2.jpg"
-            alt=""
-            class="miniatureImg inactiveImg"
-          />
-          <img
-            src="../assets/img/dog-gallery-2.jpg"
-            alt=""
-            class="miniatureImg inactiveImg"
-          />
-        </div>
-        <div class="productDescription">
-          <h1>Pancho</h1>
-          <h2>Estoy buscando alguien que me rasque la panza</h2>
-          <p>
-            Esta es la descripción completa de la mascota con los requisitos necesarios para la adopción.
-          </p>
-          <a href="#">Adóptame</a>
+        <div class="container-lg section__container">
+          <div class="row">
+            <div class="col-md-6 d-flex flex-column productGallery">
+              <div class="overflow-hidden flex-grow-1">
+                <img
+                  src="../assets/img/dog-gallery-2.jpg"
+                  alt="Foto principal de Pancho"
+                  class="mainImg w-100"
+                />
+              </div>
+
+              <div class="d-flex flex-wrap mt-3">
+                <img
+                  src="../assets/img/dog-gallery-2.jpg"
+                  alt="Foto de perfil de Pancho"
+                  class="miniatureImg activeImg"
+                />
+                <img
+                  src="../assets/img/dog-gallery-2.jpg"
+                  alt="Pancho jugando"
+                  class="miniatureImg inactiveImg"
+                />
+                <img
+                  src="../assets/img/dog-gallery-2.jpg"
+                  alt="Pancho acostado"
+                  class="miniatureImg inactiveImg"
+                />
+                <img
+                  src="../assets/img/dog-gallery-2.jpg"
+                  alt="Pancho dando la pata"
+                  class="miniatureImg inactiveImg"
+                  style="width: 18%; margin-right: 2.5%; height: auto"
+                />
+                <img
+                  src="../assets/img/dog-gallery-2.jpg"
+                  alt="Pancho dormido"
+                  class="miniatureImg inactiveImg"
+                  style="width: 18%; margin-right: 0; height: auto"
+                />
+              </div>
+            </div>
+            <div
+              class="col-md-6 mt-4 mt-lg-0 mt-sm-4 d-flex flex-column productDescription"
+            >
+              <h1>Pancho</h1>
+              <h2>Estoy buscando alguien que me rasque la panza</h2>
+              <p>
+                Esta es la descripción completa de la mascota con los requisitos
+                necesarios para la adopción.
+              </p>
+              <button
+                type="button"
+                data-bs-toggle="modal"
+                data-bs-target="#modalFormularioAdopcion"
+                class="btn btn-block"
+              >
+                Adóptame
+              </button>
+            </div>
+          </div>
         </div>
       </section>
+
+      <!-- Modal -->
+      <div
+        class="modal fade"
+        id="modalFormularioAdopcion"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="modalFormularioAdopcionTitle"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLongTitle">
+                Formulario de adopción
+              </h5>
+              <button
+                type="button"
+                class="close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">...</div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Cancelar
+              </button>
+              <button type="button" class="btn btn-primary">
+                Aplicar
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <!--SOCIAL-->
       <section class="section" id="social--details">
         <h2>Siguenos en nuestras redes</h2>
@@ -173,23 +250,40 @@
       <!--FOOTER SOCIAL MEDIA LINKS-->
       <ul class="footerSocial d-flex justify-content-center flex-wrap gap-3">
         <li>
-          <a href="#"><img src="../assets/img/facebook.png" alt="Facebook icon" width="50" /></a>
+          <a href="#"
+            ><img
+              src="../assets/img/facebook.png"
+              alt="Facebook icon"
+              width="50"
+          /></a>
         </li>
         <li>
-          <a href="#"><img src="../assets/img/instagram.png" alt="Instagram icon" width="50" /></a>
+          <a href="#"
+            ><img
+              src="../assets/img/instagram.png"
+              alt="Instagram icon"
+              width="50"
+          /></a>
         </li>
         <li>
-          <a href="#"><img src="../assets/img/youtube.png" alt="Youtube icon" width="50" /></a>
+          <a href="#"
+            ><img src="../assets/img/youtube.png" alt="Youtube icon" width="50"
+          /></a>
         </li>
         <li>
-          <a href="#"><img src="../assets/img/gorjeo.png" alt="Twitter icon" width="50" /></a>
+          <a href="#"
+            ><img src="../assets/img/gorjeo.png" alt="Twitter icon" width="50"
+          /></a>
         </li>
         <li>
-          <a href="#"><img src="../assets/img/tik-tok.png" alt="Tiktok icon" width="50" /></a>
+          <a href="#"
+            ><img src="../assets/img/tik-tok.png" alt="Tiktok icon" width="50"
+          /></a>
         </li>
       </ul>
       <div class="rightsText">
-        <span>@2022 AdoptaMex</span> <a href="#" class="aviso-privacidad">Aviso de privacidad</a>
+        <span>@2022 AdoptaMex</span>
+        <a href="#" class="aviso-privacidad">Aviso de privacidad</a>
       </div>
     </footer>
     <a

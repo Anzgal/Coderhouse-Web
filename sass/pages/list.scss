@@ -3,35 +3,31 @@
 // This file contains all styles related to the list page.
 
 /* LIST STYLES START HERE */
+@use '../utils/mixins';
+
 #hero--products{
-    display: flex;
+    @include mixins.centerContentHorizontallyandVertically;
     padding: 80px 20px;
-    align-items: center;
-    justify-content: center;
 }
 #grid--products{
     img{
-        object-fit: cover;
-        height: 100%;
+        max-width: 100%;
     }
     .section__container{
         .productsContainer{
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: center;
-            padding: 20px;
-            gap: 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            grid-gap: 20px;
+            align-items: stretch;
         }
         .productCard{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            width: 20%;
-            min-width: 200px;
+            box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
             border-width: 1px;
-            border-color: black;
+            border-color: #cccccc;
             border-style: solid;
+            .cardDescription{
+                padding: 20px;
+            }
             a{
                 text-decoration: none;
                 background-color: black;
@@ -39,8 +35,9 @@
                 width: 80%;
                 text-align: center;
                 padding: 10px;
-                margin-top: 25px;
                 align-self: center;
+                display: block;
+                width: 100%;
             }
         }
     }
