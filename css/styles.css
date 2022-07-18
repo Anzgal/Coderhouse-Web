@@ -104,6 +104,10 @@ footer .rightsText .aviso-privacidad:hover {
   }
 }
 
+.row {
+  overflow-x: hidden;
+}
+
 .section {
   padding-bottom: 50px;
 }
