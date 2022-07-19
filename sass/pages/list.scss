@@ -25,6 +25,13 @@
             border-width: 1px;
             border-color: #cccccc;
             border-style: solid;
+            .cardImage{
+                display: flex;
+                justify-content: center;
+                img{
+                    height: auto;
+                }
+            }
             .cardDescription{
                 padding: 20px;
             }

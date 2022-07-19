@@ -351,6 +351,13 @@ footer .rightsText .aviso-privacidad:hover {
   border-color: #cccccc;
   border-style: solid;
 }
+#grid--products .section__container .productCard .cardImage {
+  display: flex;
+  justify-content: center;
+}
+#grid--products .section__container .productCard .cardImage img {
+  height: auto;
+}
 #grid--products .section__container .productCard .cardDescription {
   padding: 20px;
 }
