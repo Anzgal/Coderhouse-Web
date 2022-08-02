@@ -80,10 +80,9 @@ footer .footerSocial {
   list-style: none;
   padding-top: 30px;
 }
-footer .footerSocial li i {
-  font-size: 50px;
-  line-height: 0;
-  color: rgb(54, 54, 54);
+footer .footerSocial li a img {
+  width: 50px;
+  height: 50px;
 }
 footer .rightsText {
   padding-top: 30px;
@@ -180,6 +179,10 @@ footer .rightsText .aviso-privacidad:hover {
   list-style-type: none;
   margin-top: 30px;
   padding-left: 0;
+}
+#socialProof .section__container ul li a img {
+  height: 50px;
+  width: auto;
 }
 
 .mediaSection .section__container {
@@ -288,6 +291,10 @@ footer .rightsText .aviso-privacidad:hover {
   padding: 20px;
   text-align: center;
 }
+#social--about .socialContainer a img {
+  width: 50px;
+  height: 50px;
+}
 
 /* ABOUT STYLES END HERE */
 /* CONTACT STYLES START HERE */
@@ -313,7 +320,8 @@ footer .rightsText .aviso-privacidad:hover {
   margin-bottom: 0.5rem;
 }
 #form--contact form .btn.btn-primary {
-  background-color: #0f4faf;
+  background: linear-gradient(25deg, rgba(21, 55, 209, 0.58) 0%, rgb(39, 82, 205) 70%);
+  border-radius: 4px;
 }
 #form--contact form .btn.btn-primary:hover {
   background-color: #030e1f;
@@ -325,6 +333,10 @@ footer .rightsText .aviso-privacidad:hover {
 
 #social--contact {
   text-align: center;
+}
+#social--contact .socialContainer a img {
+  width: 50px;
+  height: 50px;
 }
 
 /* CONTACT STYLES END HERE */
@@ -354,9 +366,14 @@ footer .rightsText .aviso-privacidad:hover {
 #grid--products .section__container .productCard .cardImage {
   display: flex;
   justify-content: center;
+  width: 100%;
+  height: 53.5%;
 }
 #grid--products .section__container .productCard .cardImage img {
-  height: auto;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 #grid--products .section__container .productCard .cardDescription {
   padding: 20px;
@@ -406,10 +423,30 @@ footer .rightsText .aviso-privacidad:hover {
   display: block;
   width: 80%;
 }
+@media screen and (max-width: 767px) {
+  #product--details .productDescription button {
+    width: 100%;
+  }
+}
+
+.modal-content .modal-body form .form-group {
+  overflow: hidden;
+}
+.modal-content .modal-body form .form-group label {
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+}
+.modal-content .modal-body form .form-group .form-control-file {
+  display: block;
+}
 
 #social--details {
   padding: 20px;
   text-align: center;
+}
+#social--details .socialContainer a img {
+  width: 50px;
+  height: 50px;
 }
 
 .modal .close {
