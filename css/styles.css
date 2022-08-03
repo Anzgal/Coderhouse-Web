@@ -42,6 +42,7 @@ header {
   }
 }
 header .navbar-brand img {
+  width: 220px;
   max-width: 100%;
 }
 
