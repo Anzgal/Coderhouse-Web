@@ -6,5 +6,5 @@ Proyecto final del curso Desarrollo Web en Coderhouse.
 
 [Link a la página](https://adoptamex.vercel.app/)
 
-![Captura de pantalla](https://adoptamex.vercel.app/)
+![Captura de pantalla](https://github.com/Anzgal/Coderhouse-Web/blob/main/assets/img/Adoptamex-screenshot.png?raw=true)
 
